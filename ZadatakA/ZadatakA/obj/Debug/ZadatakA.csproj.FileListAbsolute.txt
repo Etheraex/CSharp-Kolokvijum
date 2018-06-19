@@ -1,0 +1,7 @@
+C:\Users\mladj\source\repos\ZadatakA\ZadatakA\bin\Debug\ZadatakA.exe.config
+C:\Users\mladj\source\repos\ZadatakA\ZadatakA\bin\Debug\ZadatakA.exe
+C:\Users\mladj\source\repos\ZadatakA\ZadatakA\bin\Debug\ZadatakA.pdb
+C:\Users\mladj\source\repos\ZadatakA\ZadatakA\obj\Debug\ZadatakA.csprojAssemblyReference.cache
+C:\Users\mladj\source\repos\ZadatakA\ZadatakA\obj\Debug\ZadatakA.csproj.CoreCompileInputs.cache
+C:\Users\mladj\source\repos\ZadatakA\ZadatakA\obj\Debug\ZadatakA.exe
+C:\Users\mladj\source\repos\ZadatakA\ZadatakA\obj\Debug\ZadatakA.pdb
