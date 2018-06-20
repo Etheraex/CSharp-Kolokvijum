@@ -14,7 +14,7 @@ namespace ZadatakD
 		private List<EkipaNauka> nizNauka=new List<EkipaNauka>();
 		private List<EkipaSport> nizSport=new List<EkipaSport>();
 		//property
-
+		
 		public int UkupnoPoena
 		{
 			get
@@ -30,12 +30,14 @@ namespace ZadatakD
 
 		public string Naziv { get { return naziv; } }
 		//metode
-
+		public Fakultet(string naz)
+		{
+			this.naziv = naz;
+		}
 		public void Snimi(string putanja1,string putanja2)
 		{
 			using (StreamWriter sw1=new StreamWriter(putanja1))
 			{
-				sw1.WriteLine(Naziv);
 				foreach (EkipaNauka en in nizNauka)
 					en.Snimi(sw1);
 			}
@@ -51,7 +53,6 @@ namespace ZadatakD
 		{
 			using (StreamReader sr1=new StreamReader(putanja1))
 			{
-				naziv = sr1.ReadLine();
 				while (!sr1.EndOfStream)
 				{
 					EkipaNauka pom = new EkipaNauka();

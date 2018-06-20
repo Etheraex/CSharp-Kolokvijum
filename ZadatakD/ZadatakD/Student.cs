@@ -30,5 +30,14 @@ namespace ZadatakD
 			brojPoena = int.Parse(sr.ReadLine());
 			if (brojPoena < 0) throw new Exception("Negativan broj poena");
 		}
+
+		static public bool operator >(Student levi, Student desni)
+		{
+			return (levi.BrojPoena > desni.BrojPoena) ? true : false;
+		}
+		static public bool operator <(Student levi, Student desni)
+		{
+			return (levi.BrojPoena < desni.BrojPoena) ? true : false;
+		}
 	}
 }

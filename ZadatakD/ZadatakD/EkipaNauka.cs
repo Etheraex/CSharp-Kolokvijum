@@ -34,21 +34,20 @@ namespace ZadatakD
 		//metode
 		private int IzracunajPoene()
 		{
-			int[] najveci=new int[3];
-			najveci[0] = niz[0].BrojPoena;
-			najveci[1] = niz[1].BrojPoena;
-			najveci[2] = niz[2].BrojPoena;
-			for(int i = 3; i < niz.Count; i++)
-			{
-				if (niz[i].BrojPoena > najveci[0])
-					najveci[0] = niz[i].BrojPoena;
-				else if (niz[i].BrojPoena > najveci[1])
-					najveci[1] = niz[i].BrojPoena;
-				else if (niz[i].BrojPoena > najveci[2])
-					najveci[2] = niz[i].BrojPoena;
-			}
+			int index1 = 0;
+			int index2 = 0;
+			int index3 = 0;
+			for (int i = 0; i < niz.Count; i++)
+				if (niz[i] > niz[index1])
+					index1 = i;
+			for (int i = 0; i < niz.Count; i++)
+				if (niz[i] > niz[index2] && i!=index1)
+					index2 = i;
+			for (int i = 0; i < niz.Count; i++)
+				if (niz[i] > niz[index3] && i != index1 && i != index2)
+					index3 = i;
 
-			return (najveci[0]+najveci[1]+najveci[2]);
+			return niz[index1].BrojPoena+niz[index2].BrojPoena+niz[index3].BrojPoena;
 		}
 		public void Snimi(StreamWriter sw)
 		{

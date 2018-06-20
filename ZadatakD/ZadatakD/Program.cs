@@ -10,10 +10,10 @@ namespace ZadatakD
 	{
 		static void Main(string[] args)
 		{
-			Fakultet Elektronski = new Fakultet();
-			Elektronski.Ucitaj("C:\\Users\\mladj\\Desktop\\nauka.txt", "C:\\Users\\mladj\\Desktop\\sport.txt");
+			Fakultet Elektronski = new Fakultet("Elektronski Fakultet");
+			Elektronski.Ucitaj("nauka.txt", "sport.txt");
 			Elektronski.Sortiraj();
-			Elektronski.Snimi("C:\\Users\\mladj\\Desktop\\naukaIzlaz.txt", "C:\\Users\\mladj\\Desktop\\sportIzlaz.txt");
+			Elektronski.Snimi("naukaIzlaz.txt", "sportIzlaz.txt");
 		}
 	}
 }
